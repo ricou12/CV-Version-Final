@@ -1,0 +1,125 @@
+/* Impression */
+a:link {
+    color: black;
+}
+
+/*----------------------------------------------------------- */
+/*                       SECTION 1                            */
+/* ---------------------------------------------------------- */
+
+iframe {
+    display: none;
+}
+
+.sect1 {
+    color: black;
+    background-color: unset;
+}
+.sect1 .infoperso{
+    align-items: stretch;
+  justify-content: left;
+}
+.sect1 .logo {
+    height: 150px;
+    width: 150px;
+}
+
+.Align img {
+    height: 0px;
+    width: 0px;
+}
+
+.sect1 h2 {
+    font-size: 1em;
+}
+
+.sect1 a{
+    margin:unset;
+}
+
+.sect1 p {
+    font-size: 0.8em;
+}
+
+.adresse::before{
+    text-decoration: underline dotted;
+    content: "Adresse : ";
+}
+.tel::before{
+    text-decoration: underline dotted;
+    content: "Tel : ";
+}
+.mail::before{
+    text-decoration: underline dotted;
+    content: "Email : ";
+}
+/*----------------------------------------------------------- */
+/*                       SECTION 2                            */
+/* ---------------------------------------------------------- */
+.sect2 {
+    width: 100%;
+}
+
+.sect2 header {
+
+    background-color: unset;
+}
+
+.sect2 header h1 {
+    margin-top: 20px;
+    color: black;
+    text-shadow: unset;
+}
+
+.global {
+    display: block;
+}
+
+.sect2 {
+    display: block;
+}
+
+.sect2 h1,
+h2,
+h3 {
+    line-height: 1.4em;
+}
+.sect2 li{
+    line-height: 1.3em;
+}
+
+.sect2 h1 {
+    border:1px solid black;
+    font-size: 1em;
+}
+
+.sect2 h2 {
+    text-decoration: underline ;
+    text-shadow: unset;
+    font-size: 0.9em;
+    margin:-20px 0 0 0;
+}
+
+.sect2 h3 {
+    font-size: 0.8em;
+    text-decoration: underline dotted;
+}
+
+.sect2 li {
+    font-size: 0.7em;
+}
+
+.sect2 .contourBox {
+    background-color: unset;
+    box-shadow: unset;
+    border-radius: unset;
+}
+
+.derouler>ul {
+    overflow: unset;
+    max-height: unset;
+}
+
+.derouler>li {
+    background-color: unset;
+}
