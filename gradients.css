@@ -1,0 +1,27 @@
+header {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a50e0e+1,820101+50,820101+100 */
+    background: rgb(165, 14, 14);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgb(165, 14, 14) 1%, rgb(130, 1, 1) 50%, rgb(130, 1, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgb(165, 14, 14) 1%, rgb(130, 1, 1) 50%, rgb(130, 1, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgb(165, 14, 14) 1%, rgb(130, 1, 1) 50%, rgb(130, 1, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a50e0e', endColorstr='#820101', GradientType=0);
+    /* IE6-9 */
+}
+
+.sect1 {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#820101+0,cc0000+75,820101+100 */
+    background: rgb(130, 1, 1);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgb(130, 1, 1) 0%, rgb(204, 0, 0) 75%, rgb(130, 1, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgb(130, 1, 1) 0%, rgb(204, 0, 0) 75%, rgb(130, 1, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgb(130, 1, 1) 0%, rgb(204, 0, 0) 75%, rgb(130, 1, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#820101', endColorstr='#820101', GradientType=0);
+    /* IE6-9 */
+}

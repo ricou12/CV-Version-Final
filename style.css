@@ -1,22 +1,22 @@
 /* LES LIENS AU SURVOL */
 a:link {
-    color: rgb(102, 149, 255);
+    color: rgb(249, 249, 119);
 }
 
 a:visited {
-    color: green;
+    color: rgb(236, 226, 82);
 }
 
 a:focus {
-    color: rgb(197, 204, 199);
+    color: rgb(148, 245, 176);
 }
 
 a:hover {
-    color: rgb(165, 249, 219);
+    color: rgb(245, 226, 56);
 }
 
 a:active {
-    color: yellow;
+    color: rgb(171, 248, 178);
 }
 
 .elem-liste0 {
@@ -24,16 +24,25 @@ a:active {
 }
 
 body {
-    /* Variable */
-    --couleurFond: rgb(130, 1, 1);
+    /* Variables */
+    --gradientPrim: rgb(130, 1, 1);
+    --gradientSec: rgb(181, 24, 24);
+    --gradientTer: rgb(130, 1, 1);
+    --Size5: 2.2em;
+    --Size4: 1.7em;
+    --Size3: 1.5em;
+    --Size2: 1.3em;
+    --Size1: 1.1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 /* Conteneur global pour 2 items (<section>) */
 .global {
     /* Eléments contenus étirables */
     display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("");
 }
 
 .arround {
@@ -45,15 +54,20 @@ body {
 /* ------------------- */
 .sect1 {
     display: flex;
-    background-color: var(--couleurFond);
+    background-image: -moz-linear-gradient(to bottom, var(--gradientPrim) 0%, var(--gradientSec) 70%, var(--gradientPrim) 100%);
+    background-image: -webkit-linear-gradient(to bottom, var(--gradientPrim) 0%, var(--gradientSec) 70%, var(--gradientPrim) 100%);
+    background-image: -o-linear-gradient(to bottom, var(--gradientPrim) 0%, var(--gradientSec) 70%, var(--gradientPrim) 100%);
+    background-image: linear-gradient(to bottom, var(--gradientPrim) 0%, var(--gradientSec) 70%, var(--gradientPrim) 100%);
+
     color: white;
+    margin-top: 5px;
     border-radius: 0 0 10px 10px;
 }
 
 .containlogo {
-    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 40px;
 }
 
@@ -74,25 +88,50 @@ body {
     background-color: white;
     border-radius: 7px;
     height: 2px;
-    transition: 1s ease-in-out;
 }
 
 .zoomer:hover .dplHaut {
-    transform: translate(0px, -10px);
+    animation: dpHaut 1s alternate-reverse ease-in-out infinite;
 }
 
-.zoomer h2 {
-    transition: 1s ease-in-out;
+@keyframes dpHaut {
+    from {
+        transform: translate(0px, 0px);
+    }
+
+    to {
+        transform: translate(0px, -10px);
+    }
 }
 
 .zoomer:hover h2 {
-    -webkit-animation: solarise 2s ease-in-out;
-    animation: relief 2s ease-in-out;
-    transform: scale(1.3);
+    animation: zoom 1s alternate infinite;
 }
 
+@keyframes zoom {
+    from {
+        transform: scale(0.9);
+    }
+
+    to {
+        transform: scale(1.2);
+
+    }
+}
+
+
 .zoomer:hover .dplBas {
-    transform: translate(0px, 10px);
+    animation: dpHBas 1s alternate-reverse ease-in-out infinite;
+}
+
+@keyframes dpHBas {
+    from {
+        transform: translate(0px, 0px);
+    }
+
+    to {
+        transform: translate(0px, 10px);
+    }
 }
 
 .adr {
@@ -122,8 +161,14 @@ iframe {
 }
 
 header {
+    position: relative;
+    z-index: 1;
     text-align: center;
-    background-color: var(--couleurFond);
+    background-image: -moz-linear-gradient(to left, var(--gradientSec) 0% 1%, rgb(130, 1, 1) 50%, var(--gradientPrim) 100%);
+    background-image: -webkit-linear-gradient(to left, var(--gradientSec) 0% 1%, rgb(130, 1, 1) 50%, var(--gradientPrim) 100%);
+    background-image: -o-linear-gradient(to left, var(--gradientSec) 0% 1%, rgb(130, 1, 1) 50%, var(--gradientPrim) 100%);
+    background: linear-gradient(to left, var(--gradientSec) 0% 1%, rgb(130, 1, 1) 50%, var(--gradientPrim) 100%);
+    box-shadow: 2px 2px 3px 2px rgba(92, 87, 87, 0.6);
     padding: 10px;
     border-radius: 10px 10px 0 0;
     margin-top: 5px;
@@ -140,6 +185,10 @@ header {
 .sect2 h1 {
     color: rgb(235, 242, 255);
     text-shadow: 3px 10px 15px gray;
+}
+
+li {
+    line-height: 1.6em;
 }
 
 .elem-liste1 {
@@ -216,11 +265,11 @@ ul:hover {
     }
 
     .sect1 h2 {
-        font-size: 2.5em;
+        font-size: var(--Size5);
     }
 
     .sect1 p {
-        font-size: 1.7em;
+        font-size: var(--Size4);
     }
 
     .Align {
@@ -232,19 +281,19 @@ ul:hover {
     /*     SECTION 2       */
     /* ------------------- */
     .sect2 h1 {
-        font-size: 1.6em;
+        font-size: var(--Size4);
     }
 
     .sect2 h2 {
-        font-size: 1.4em;
+        font-size: var(--Size3);
     }
 
     .sect2 h3 {
-        font-size: 1.1em;
+        font-size: var(--Size1);
     }
 
     .sect2 li {
-        font-size: 1.1em;
+        font-size: var(--Size1);
     }
 
     iframe {
@@ -279,8 +328,13 @@ ul:hover {
         align-items: flex-start;
     }
 
+    .infoperso {
+        flex-direction: column;
+        align-content: flex-start;
+    }
+
     .sect1 h2 {
-        font-size: 2.5em;
+        font-size: var(--Size5);
     }
 
     a {
@@ -288,32 +342,32 @@ ul:hover {
     }
 
     .sect1 p {
-        font-size: 1.8em;
+        font-size: var(--Size4);
     }
 
     iframe {
-        width: 300px;
-        height: 200px;
+        width: 250px;
+        height: 150px;
     }
 
     /*-------------------- */
     /*     SECTION 2       */
     /* ------------------- */
     .sect2 h1 {
-        font-size: 1.9em;
+        font-size: var(--Size4);
     }
 
     .sect2 h2 {
-        font-size: 1.9em;
+        font-size: var(--Size4);
     }
 
     .sect2 h3 {
-        font-size: 1.3em;
+        font-size: var(--Size2);
     }
 
 
     .sect2 li {
-        font-size: 1.1em;
+        font-size: var(--Size1);
     }
 }
 
@@ -339,17 +393,22 @@ ul:hover {
         padding: 50px 10px 50px 10px;
     }
 
+    .sect1 .logo {
+        height: 150px;
+        width: 150px;
+    }
+
     .fixer {
         display: block;
         position: fixed;
     }
 
     .sect1 h2 {
-        font-size: 1.5em;
+        font-size: var(--Size3);
     }
 
     .sect1 p {
-        font-size: 1em;
+        font-size: var(--Size1);
     }
 
     .Align {
@@ -359,7 +418,7 @@ ul:hover {
 
     iframe {
         width: 250px;
-        height: 200px;
+        height: 150px;
     }
 
     /*-------------------- */
@@ -370,20 +429,20 @@ ul:hover {
     }
 
     .sect2 h1 {
-        font-size: 1.9em;
+        font-size: var(--Size4);
     }
 
     .sect2 h2 {
-        font-size: 1.9em;
+        font-size: var(--Size3);
     }
 
     .sect2 h3 {
-        font-size: 1.3em;
+        font-size: var(--Size3);
     }
 
 
     .sect2 li {
-        font-size: 1.1em;
+        font-size: var(--Size1);
     }
 
 }
