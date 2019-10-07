@@ -58,7 +58,6 @@ body {
     background-image: -webkit-linear-gradient(to bottom, var(--gradientPrim) 0%, var(--gradientSec) 70%, var(--gradientPrim) 100%);
     background-image: -o-linear-gradient(to bottom, var(--gradientPrim) 0%, var(--gradientSec) 70%, var(--gradientPrim) 100%);
     background-image: linear-gradient(to bottom, var(--gradientPrim) 0%, var(--gradientSec) 70%, var(--gradientPrim) 100%);
-
     color: white;
     margin-top: 5px;
     border-radius: 0 0 10px 10px;
