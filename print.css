@@ -79,6 +79,12 @@ iframe {
     display: block;
 }
 
+.sect2 .contourBox {
+    padding:0.5cm 5%;   
+}
+.contourBox h2{
+    /* margin-top: 5cm; */
+}
 .sect2 h1,
 h2,
 h3 {
@@ -91,23 +97,23 @@ h3 {
 
 .sect2 h1 {
     border: 0.265mm solid black;
-    font-size: 0.42cm;
+    font-size: 0.45cm;
 }
 
 .sect2 h2 {
     text-decoration: underline;
     text-shadow: unset;
-    font-size: 0.37cm;
+    font-size: 0.4cm;
     margin: -5.292mm 0 0 0;
 }
 
 .sect2 h3 {
-    font-size: 0.33cm;
+    font-size: 0.35cm;
     text-decoration: underline dotted;
 }
 
 .sect2 li {
-    font-size: 0.29cm;
+    font-size: 0.35cm;
 }
 
 .sect2 .contourBox {
@@ -124,6 +130,6 @@ h3 {
 .derouler>li {
     background-color: unset;
 }
-/* .StPage{
+.elem-liste0 > .StPage{
   page-break-before: always;  
-} */
+}
